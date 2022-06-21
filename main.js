@@ -153,6 +153,7 @@ for (let c = 0; c < width; c++) {
   }
 
   else {
+    let keyTile = document.getElementById("Key" + letter);
     keyTile.classList.add("absent");
     curTile.classList.add("absent");
   }
