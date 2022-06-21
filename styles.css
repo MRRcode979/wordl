@@ -8,7 +8,6 @@ hr {
 }
 
 #title {
-  36px;
   font-weight: bold;
   letter-spacing: 2px;
   color: blue;
@@ -31,7 +30,7 @@ hr {
   margin: 2.5px;
   /* Text */
   color: black;
-  font-size 36px;
+  font-size: 36px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -70,7 +69,7 @@ hr {
   height: 40px;
   margin: 1px;
   /* Text */
-  font-size 20px;
+  font-size: 20px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -84,7 +83,7 @@ hr {
   height: 40px;
   margin: 1px;
   /* Text */
-  font-size 20px;
+  font-size: 20px;
   font-weight: bold;
   display: flex;
   justify-content: center;
