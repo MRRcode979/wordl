@@ -125,7 +125,6 @@ function update() {
       curTile.classList.add("correct");
 
       let keyTile = document.getElementById("Key" + letter);
-      keyTile.classList.remove("absent");
       keyTile.classList.remove("present");
       keyTile.classList.add("correct");
       
