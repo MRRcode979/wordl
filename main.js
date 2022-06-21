@@ -107,6 +107,7 @@ function processKey() {
 function update() {
   let correct = 0;
   let letterCount = {};
+
   for (let i = 0; i < word.length; i++) {
     letter = word[i];
     if (letterCount[letter]) {
@@ -122,6 +123,11 @@ function update() {
 
     if (word[c] == letter) {
       curTile.classList.add("correct");
+
+      let keyTile = document.getElementById("Key" + letter);
+      keyTile.classList.remove("present");
+      keyTile.classList.add("correct");
+
       correct++;
       letterCount[letter] -= 1;
       }
@@ -136,13 +142,22 @@ for (let c = 0; c < width; c++) {
   let curTile = document.getElementById(row.toString() + '-' + c.toString());
   let letter = curTile.innerText;
   if (!curTile.classList.contains("correct")) {
+
   if (word.includes(letter) && letterCount[letter] > 0) {
+    let keyTile = document.getElementById("Key" + letter);
     curTile.classList.add("present");
+    if (!keyTile.classList.contains("correct")) {
+    keyTile.classList.add("present");
+    }
     letterCount[letter] -= 1;
   }
+
   else {
+    let keyTile = document.getElementById("Key" + letter);
+    keyTile.classList.add("absent");
     curTile.classList.add("absent");
   }
+
  }
 }
 }
