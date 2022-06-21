@@ -153,7 +153,7 @@ for (let c = 0; c < width; c++) {
     letterCount[letter] -= 1;
   }
 
-  else if !keyTile.classList.contains("correct") {
+  else if (!keyTile.classList.contains("correct")) {
     let keyTile = document.getElementById("Key" + letter);
     keyTile.classList.add("absent");
     curTile.classList.add("absent");
